@@ -1,0 +1,21 @@
+{
+  "name": "blitzgenerative.github.io",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://blitzgenerative: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@github.com/blitzgenerative/blitzgenerative.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blitzgenerative/blitzgenerative.github.io/issues"
+  },
+  "homepage": "https://github.com/blitzgenerative/blitzgenerative.github.io#readme",
+  "dependencies": {}
+}
