@@ -2,5 +2,5 @@
   link: /
 - name: About
   link: /about/
-- name: Portfolio
-  link: /portfolio/
+- name: Contract
+  link: https://goerli.etherscan.io/address/0x5074ca50be4990163d18be797783f8aa7cb23be3

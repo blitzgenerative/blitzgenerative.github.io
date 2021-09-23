@@ -1,3 +1,13 @@
+
+<script type="text/javascript">
+  const ethereumButton = document.querySelector('.enableEthereumButton');
+
+  ethereumButton.addEventListener('click', () => {
+    //Will Start the metamask extension
+    ethereum.request({ method: 'eth_requestAccounts' });
+  });
+</script>
+
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand p-0" href="{{ '/' | relative_url }}">
@@ -17,6 +27,8 @@
           </li>
         {% endfor %}
       </ul>
+
+    <button class="enableEthereumButton">Connect MetaMask</button>
     </div>
   </div>
 </nav>
