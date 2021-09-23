@@ -4,3 +4,13 @@
 @import "bootstrap-dark";
 @import "syntax-highlighting";
 @import "main";
+
+
+.button-general {
+    background: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 25px 5px 25px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
