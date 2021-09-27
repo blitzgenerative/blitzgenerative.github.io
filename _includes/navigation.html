@@ -8,6 +8,12 @@
         let contactAddress = '0x08222d81a220d39dd3012668a94b62cc653ad273'
         let smartContract;
 
+        // used for visualizing across scripts.
+        let seriesPrice
+        let tokenID
+        let tokenSeed
+        let tokenCode
+
         function handleAccountsChanged(accounts) {
             console.log('Calling HandleChanged')
 
@@ -82,15 +88,32 @@
 
         async function purchase(sid) {
           console.log("Series to be purchased  "+sid)
-          let seriesPrice
+
           await smartContract.methods.getSeries(sid,0).call().then( function (result) {
               seriesPrice = result.curPricePerToken
           });
           console.log(seriesPrice)
+          let purchaseSuccess = false;
           await smartContract.methods.purchase(sid).send({from:currentAccount, value:seriesPrice}).then( function (result) {
               console.log(result)
+              tokenID = result
+              purchaseSuccess=true
             });
 
+          // get the token seed and code
+          if (purchaseSuccess) {
+
+            await smartContract.methods.getTokenParams(tokenID).call().then( function (result) {
+                console.log(result)
+                tokenSeed = result.seed
+                tokenCode = result.codeLocation0
+              });
+            // create a congratulations note and link to show the art
+            // generated in real time.
+
+            $('.visualizeDiv').css("display","block");
+            $(this).css("display","none"); // need to get this specific one!
+          }
         }
 
     </script>
@@ -114,13 +137,21 @@
             });
 
             $('.purchaseButton').click(function() {
+              // testing out by having it here.
+              $('.visualizeDiv').css("display","block");
+              $(this).css("display","none");
               console.log($(this))
-                purchase( $(this).attr('id').replace('purchase', '') )
+              purchase( $(this).attr('id').replace('purchase', '') )
             });
 
-            //$('#setValue').click(function() {
-            //    setValue()
-            //});
+            $('.visualizeButton').click(function() {
+              console.log("Visualizing work.")
+              $("#dialog").dialog();
+              // generate a popup window in front.
+              // inside of it run the code using the seed.
+              // have an x out button
+
+            });
 
             if (window.ethereum) {
 
