@@ -96,7 +96,7 @@
           let purchaseSuccess = false;
           await smartContract.methods.purchase(sid).send({from:currentAccount, value:seriesPrice}).then( function (result) {
               console.log(result)
-              tokenID = result
+              tokenID = result.events.Mint.returnValues.tokenID
               purchaseSuccess=true
             });
 
@@ -112,7 +112,9 @@
             // generated in real time.
 
             $('.visualizeDiv').css("display","block");
-            $(this).css("display","none"); // need to get this specific one!
+            $('#Series'+sid+"-CodeLocation0").html( tokenCode.replaceAll(';', ';\n') )
+            $('#'+sid+'tokenSeed').html(tokenSeed)
+            $('#'+sid+'purchase').css("display","none"); // need to get this specific one!
           }
         }
 
@@ -138,15 +140,14 @@
 
             $('.purchaseButton').click(function() {
               // testing out by having it here.
-              $('.visualizeDiv').css("display","block");
-              $(this).css("display","none");
+              //$('.visualizeDiv').css("display","block");
+              //$(this).css("display","none");
               console.log($(this))
-              purchase( $(this).attr('id').replace('purchase', '') )
+              purchase( $(this).attr('id').replace('purchase', ''),  )
             });
 
             $('.visualizeButton').click(function() {
-              console.log("Visualizing work.")
-              $("#dialog").dialog();
+
               // generate a popup window in front.
               // inside of it run the code using the seed.
               // have an x out button
