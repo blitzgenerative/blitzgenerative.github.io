@@ -1,2 +1,8 @@
-- name: Token 0
-  link: /test/
+tokens:
+  - name: SpikeBall 0
+    link: /test/
+
+SpikeBall 0:
+  owner: "0x4c3a1684f27491c2bb689b81dcebe583e2471f8d3531819d6b1d5e1b9574efeb"
+  seed: "0x4c3a1684f27491c2bb689b81dcebe583e2471f8d3531819d6b1d5e1b9574efeb"
+  nTransactions: 1

@@ -1,4 +1,20 @@
 ---
 layout: post
-title: SpikeBall 1
+title: SpikeBall 0
 ---
+{% assign tokenParams = site.data.works[page.title] %}
+
+<video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
+  <source type="video/mp4" src="/assets/vids/SaveOut_java_sphere_morph.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
+<br>
+<div class="TokenData">
+<span>Token owner: {{tokenParams.owner}}</span>
+<br>
+<span>Token seed: {{tokenParams.seed}}</span>
+<br>
+<span>Number of times token has been transacted: {{tokenParams.nTransactions}}</span>
+</div>
