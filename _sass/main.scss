@@ -47,6 +47,20 @@ img {
   display: block;
 }
 
+ul.dashed {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
 #tokenGallery{
   display: flex;
   flex-direction: row;
