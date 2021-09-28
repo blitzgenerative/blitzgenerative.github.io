@@ -62,10 +62,11 @@ For the first "SpikeBall" series, Processing is used. An implementation in p5.js
 
 *"The archive is located in a decommissioned coal mine in the Svalbard archipelago, closer to the North Pole than the Arctic Circle. GitHub captured a snapshot of every active public repository on 02/02/2020 and preserved that data in the Arctic Code Vault."*
 
+<br>
+
 - **How can I generate a SpikeBall? Upon purchasing the piece, if you stay on the page, all the necessary information including the unique seed connected to your artwork will be provided. All you need to do is:**
 
 1. Download Processing version 3.5.4 on a computer: <a href="https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-macosx.zip" target="_blank" rel="noopener noreferrer">Mac Download</a>, <a href="https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-windows64.zip" target="_blank" rel="noopener noreferrer">Windows Download</a>. <a href="https://processing.org/download" target="_blank" rel="noopener noreferrer"> General Processing download site</a>.
-<br> <br>
 
 2. Copy and paste the code for this series which is permanently hosted on the blockchain and can be found at the bottom of the series section.
 
