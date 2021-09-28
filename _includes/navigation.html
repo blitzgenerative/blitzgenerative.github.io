@@ -23,11 +23,13 @@
             } else if (accounts[0] !== currentAccount) {
                 currentAccount = accounts[0];
                 $('#enableMetamask').html(currentAccount)
+                $('#connectWalletSign').css('display','none')
                 $('#status').html('')
 
                 if(currentAccount != null) {
                     // Set the button label
                     $('#enableMetamask').html(currentAccount)
+                    $('#connectWalletSign').css('display','none')
                 }
             }
             console.log('WalletAddress in HandleAccountChanged ='+currentAccount)

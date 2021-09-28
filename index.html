@@ -14,8 +14,11 @@ layout: default
       <span class="post-date archive-date fs-4"
         > <i id= '{{sid[1] | append: "numMint"}}'></i>/<i id={{sid[1] | append: "maxMint"}}></i> Minted </span>
       <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
-        >{{ post.title }}</a
-      >
+        >{{ post.title }}</a>
+      <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
+        <source type="video/mp4" src="/assets/vids/SpikeBall 0.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
     </div>
   {% endfor %}
 </div>
