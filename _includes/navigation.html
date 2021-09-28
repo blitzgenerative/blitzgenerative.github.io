@@ -91,6 +91,8 @@
         async function purchase(sid) {
           console.log("Series to be purchased  "+sid)
 
+          $('#'+sid+'purchase').html("Processing transaction... Don't refresh page.");
+
           await smartContract.methods.getSeries(sid,0).call().then( function (result) {
               seriesPrice = result.curPricePerToken
           });
@@ -118,6 +120,9 @@
             $('#'+sid+'tokenSeed').html(tokenSeed)
             $('#'+sid+'purchase').css("display","none"); // need to get this specific one!
           }
+          else {
+            $('#'+sid+'purchase').html("Purchase");
+          }
         }
 
     </script>
@@ -141,9 +146,6 @@
             });
 
             $('.purchaseButton').click(function() {
-              // testing out by having it here.
-              //$('.visualizeDiv').css("display","block");
-              //$(this).css("display","none");
               console.log($(this))
               purchase( $(this).attr('id').replace('purchase', ''),  )
             });
