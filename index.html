@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% assign min = 0 %}
+{% assign max = 10 %}
+{% assign diff = max | minus: min %}
+{% assign randomNumber = "now" | date: "%09N" | modulo: diff | plus: min %}
+
 <em style="font-size:2rem;">Made from Silicon</em>
 
 <h1 class="archive-year">Series</h1>
@@ -16,9 +21,10 @@ layout: default
         <span class="post-date archive-date fs-4"
           > <i id= '{{sid[1] | append: "numMint"}}'></i>/<i id={{sid[1] | append: "maxMint"}}></i> Minted </span>
       <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
-        <source type="video/mp4" src="/assets/vids/SpikeBall 0.mp4" type="video/mp4">
+        <source type="video/mp4" src="/assets/vids/SpikeBall {{randomNumber}}.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
+      <span class="tokenGalleryLink">{{ randomNumber | prepend: "SpikeBall #" }}</span>
     </div>
   {% endfor %}
 </div>
