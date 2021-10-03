@@ -13,22 +13,23 @@
         let tokenID
         let tokenSeed
         let tokenCode
+        let numMint
 
         function handleAccountsChanged(accounts) {
             console.log('Calling HandleChanged')
 
             if (accounts.length === 0) {
                 console.log('Please connect to MetaMask.');
-                $('#enableMetamask').html('Connect with Metamask')
+                $('#enableMetamask').text('Connect with Metamask')
             } else if (accounts[0] !== currentAccount) {
                 currentAccount = accounts[0];
-                $('#enableMetamask').html(currentAccount)
+                $('#enableMetamask').text(currentAccount)
                 $('#connectWalletSign').css('display','none')
-                $('#status').html('')
+                $('#status').text('')
 
                 if(currentAccount != null) {
                     // Set the button label
-                    $('#enableMetamask').html(currentAccount)
+                    $('#enableMetamask').text(currentAccount)
                     $('#connectWalletSign').css('display','none')
                 }
             }
@@ -45,7 +46,7 @@
                 // EIP-1193 userRejectedRequest error
                 // If this happens, the user rejected the connection request.
                 console.log('Please connect to MetaMask.');
-                $('#status').html('You refused to connect Metamask')
+                $('#status').text('You refused to connect Metamask')
             } else {
                 console.error(err);
             }
@@ -73,13 +74,14 @@
                 console.log(result)
 
                 //set minting values:
-                $('#'+sid+'numMint').html(result.numMint)
-                $('#'+sid+'maxMint').html(result.maxMint)
+                numMint = result.numMint
+                $('#'+sid+'numMint').text(result.numMint)
+                $('#'+sid+'maxMint').text(result.maxMint)
 
                 //set locked and paused and price status
-                $('#'+sid+'pauseStatus').html(result.paused.toString().toUpperCase())
-                $('#'+sid+'lockStatus').html(result.locked.toString().toUpperCase())
-                $('#'+sid+'ethPrice').html(result.curPricePerToken/1e18)
+                $('#'+sid+'pauseStatus').text(result.paused.toString().toUpperCase())
+                $('#'+sid+'lockStatus').text(result.locked.toString().toUpperCase())
+                $('#'+sid+'ethPrice').text(result.curPricePerToken/1e18)
                 // set code value. Loc = 0
                 //$('#Series'+sid+'-CodeLocation0').html(result.script)
                 //console.log("Set script to:")
@@ -91,7 +93,7 @@
         async function purchase(sid) {
           console.log("Series to be purchased  "+sid)
 
-          $('#'+sid+'purchase').html("Processing transaction... Don't refresh page.");
+          $('#'+sid+'purchase').text("Processing transaction... Don't refresh page.");
 
           await smartContract.methods.getSeries(sid,0).call().then( function (result) {
               seriesPrice = result.curPricePerToken
@@ -115,13 +117,15 @@
             // create a congratulations note and link to show the art
             // generated in real time.
 
+            console.log("Code being output!!!")
+            console.log(tokenCode)
             $('.visualizeDiv').css("display","block");
-            $('#Series'+sid+"-CodeLocation0").html( tokenCode.replaceAll(';', ';\n') )
-            $('#'+sid+'tokenSeed').html(tokenSeed)
+            $('#Series'+sid+"-CodeLocation0").text( tokenCode.replaceAll(';', ';\n').replaceAll('}', '}\n').replaceAll('0x4c3a1684f27491c2bb689b81dcebe583e2471f8d3531819d6b1d5e1b9574efeb',tokenSeed) )
             $('#'+sid+'purchase').css("display","none"); // need to get this specific one!
+            $('#'+sid+'numMint').text((parseInt(numMint)+1).toString())
           }
           else {
-            $('#'+sid+'purchase').html("Purchase");
+            $('#'+sid+'purchase').text("Purchase");
           }
         }
 

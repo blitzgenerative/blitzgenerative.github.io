@@ -9,7 +9,7 @@ layout: default
 
 <em style="font-size:2rem;">Made from Silicon</em>
 
-<h1 class="archive-year">Series</h1>
+<h1 class="archive-year">Series:</h1>
 <div class="archive">
   {% for post in site.posts %}
    <!-- Get the name of the series so I can then call its smart contract result. -->
@@ -17,7 +17,7 @@ layout: default
     {% assign sid = sname[0] | split: "Series "%}
     <div class="archive-item">
       <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
-        >{{ post.title }}</a>
+        ><b>{{ post.title }}</b></a>
         <span class="post-date archive-date fs-4"
           > <i id= '{{sid[1] | append: "numMint"}}'></i>/<i id={{sid[1] | append: "maxMint"}}></i> Minted </span>
       <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
