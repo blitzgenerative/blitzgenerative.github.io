@@ -1,9 +1,11 @@
 SpikeBall 0:
+  id: 0
   link: /SpikeBall-0/
   owner: "0x1c3A7E57043Ee1719fa58a415e0e224E059a8f20"
   seed: "0x6718d730a36743aefdd5fbe6949e7c2dfb0e79bea9c9e94f7bb12fa260f5b6cb"
   nTransactions: 1
 SpikeBall 1:
+  id: 1
   link: /SpikeBall-1/
   owner: "0x1c3A7E57043Ee1719fa58a415e0e224E059a8f20"
   seed: "0xf1927ad968923422a8ade0d337e450d3ebbab52ed95d5170ea30b38ea361719d"
