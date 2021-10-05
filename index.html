@@ -3,11 +3,11 @@ layout: default
 ---
 
 {% assign min = 0 %}
-{% assign max = 10 %}
+{% assign max = 1 %}
 {% assign diff = max | minus: min %}
 {% assign randomNumber = "now" | date: "%09N" | modulo: diff | plus: min %}
 
-<em style="font-size:2rem;">Made from Silicon</em>
+<em style="font-size:2rem;">Silicon Speaks</em>
 
 <h1 class="archive-year">Series:</h1>
 <div class="archive">
@@ -19,7 +19,7 @@ layout: default
       <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
         ><b>{{ post.title }}</b></a>
         <span class="post-date archive-date fs-4"
-          > <i id= '{{sid[1] | append: "numMint"}}'></i>/<i id={{sid[1] | append: "maxMint"}}></i> Minted </span>
+          > <i id= '{{sid[1] | append: "numMint"}}'>2</i>/<i id={{sid[1] | append: "maxMint"}}>1000</i> Minted </span>
       <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
         <source type="video/mp4" src="/assets/vids/SpikeBall {{randomNumber}}.mp4" type="video/mp4">
       Your browser does not support the video tag.

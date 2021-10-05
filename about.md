@@ -22,7 +22,9 @@ Things are fundamentally different with NFTs on the block chain. Not only is the
 
 Inspired by the pioneers of crypto-native generative art like [Larva Labs](https://www.larvalabs.com/autoglyphs) and [Deafbeef](https://www.deafbeef.com/), Blitz Generative has its own ERC721 smart contract to mint and sell its token, <em>Blitz</em>.
 
-Our contract can be found [here](https://goerli.etherscan.io/address/0x5074ca50be4990163d18be797783f8aa7cb23be3) and is built off of open source, battle tested code from both [OpenZeppelin](https://openzeppelin.com/) and [Deafbeef](https://etherscan.io/address/0xd754937672300ae6708a51229112de4017810934#code). Having our own contract gives us full ownership of our work, without the fees and centralized control of NFT minting via [marketplaces](https://opensea.io/) -- antithetical to the decentralized dream of Satoshi Nakamoto. It also gives us complete artistic freedom to experiment with new ways of issuing tokens and ways to create art.
+Our contract can be found [here](https://etherscan.io/address/0x08e8bd2b24ebef3ef407aca9db13436d3fce25c2) and is built off of open source, battle tested code from both [OpenZeppelin](https://openzeppelin.com/) and [Deafbeef](https://etherscan.io/address/0xd754937672300ae6708a51229112de4017810934#code). Having our own contract gives us full ownership of our work, without the fees and centralized control of NFT minting via [marketplaces](https://opensea.io/) -- antithetical to the decentralized dream of Satoshi Nakamoto. It also gives us complete artistic freedom to experiment with new ways of issuing tokens and ways to create art.
+
+50% of all proceeds will be donated to [GiveDirectly](https://www.givedirectly.org/). A [GiveWell](https://www.givewell.org/) top rated charity.
 
 We are interested in helping to further open source the creation of NFTs outside of centralized minting contracts and are happy to help other interested artists in deploying their own work.
 
@@ -40,8 +42,8 @@ If all pieces are sold out then you may be able to find them on secondary market
 
 - **What are the details of the Blitz Generative smart contract?**
 
-The smart contract that can be found at: [https://goerli.etherscan.io/address/0x5074ca50be4990163d18be797783f8aa7cb23be3
-](https://goerli.etherscan.io/address/0x5074ca50be4990163d18be797783f8aa7cb23be3
+The smart contract that can be found at: [https://etherscan.io/address/0x08e8bd2b24ebef3ef407aca9db13436d3fce25c2
+](https://etherscan.io/address/0x08e8bd2b24ebef3ef407aca9db13436d3fce25c2
 ). It is a combination of gold standard safety for NFT ERC721 tokens from [OpenZeppelin](https://openzeppelin.com/) with additional code to manage different art series, prices, and code upload taken from [Deafbeef](https://etherscan.io/address/0xd754937672300ae6708a51229112de4017810934#code) and [ArtBlocks](https://etherscan.io/address/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270#readContract).
 
 Functions in the contract that you may be interested in calling:
@@ -70,4 +72,4 @@ For the first "SpikeBall" series, Processing is used. An implementation in p5.js
 
 2. Copy and paste the code for this series which is permanently hosted on the blockchain and can be found at the bottom of the series section.
 
-3. Paste at the top line <code>randomSeed=</code> your unique random seed.
+3. Paste at the top line <code>rs=SEED</code> your unique random seed.
