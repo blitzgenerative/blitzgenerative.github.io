@@ -1,5 +1,5 @@
 {% assign tokenParams = site.data.works[page.title] %}
-
+{% assign tokenAttrs = site.data.SpikeBall_attrs[page.title] %}
 <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
   <source type="video/mp4" src="/assets/vids/{{page.title}}.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -8,14 +8,30 @@ Your browser does not support the video tag.
 <br>
 <br>
 <div class="TokenData">
-<span>Token owner: {{tokenParams.owner}}</span>
+<b>Token Data:</b>
 <br>
-<span>Token seed: {{tokenParams.seed}}</span>
+<span>Token owner: <code>{{tokenParams.owner}}</code></span>
 <br>
-<span>Number of times token has been transacted: {{tokenParams.nTransactions}}</span>
+<span>Token seed: <code>{{tokenParams.seed}}</code></span>
+<br>
+<span>Number of times token has been transacted: <code>{{tokenParams.nTransactions}}</code></span>
+<br>
+<br>
+<b>Token Properties:</b>
+<br>
+{% for attr in tokenAttrs %}
+  <span>{{attr[0]}}: <code>{{attr[1]}}</code></span>
+  <br>
+
+{% endfor %}
+
+<br>
+<a href="https://opensea.io/assets/0x08e8BD2b24ebeF3ef407AcA9dB13436D3FcE25c2/{{tokenParams.id}}" target="_blank" rel="noopener noreferrer" style="text-align:center;display:block;">View on OpenSea</a>
 
 </div>
 <br>
 <br>
 
-<a href="https://opensea.io/assets/0x08e8BD2b24ebeF3ef407AcA9dB13436D3FcE25c2/{{tokenParams.id}}" target="_blank" rel="noopener noreferrer">See on OpenSea</a>
+<div align="center">
+  <button id="Gallery-redirect-Spike" class="button-general">Back to Gallery</button>
+</div>

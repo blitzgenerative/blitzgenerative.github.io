@@ -1,0 +1,22 @@
+SpikeBall 0:
+  RotationX: Positive Fast
+  RotationY: Negative Fast
+  GrowthProbability: Slow Decay
+  NumberVertices: Slow Decay
+  Radius: Small
+  SurfaceRandomizer: Extremely Dense
+  BackgroundColor: ForestGreen
+  LightingColor: MediumSeaGreen
+  SurfaceColor: DeepPink
+  StrokeColor: DarkTurquoise
+SpikeBall 1:
+  RotationX: Negative Fast
+  RotationY: Positive Fast
+  GrowthProbability: Fast Growth
+  NumberVertices: Few Vertices
+  Radius: Small
+  SurfaceRandomizer: Extremely Dense
+  BackgroundColor: Tan
+  LightingColor: DimGray
+  SurfaceColor: DarkOrchid
+  StrokeColor: MediumPurple
