@@ -1,0 +1,18 @@
+colors 0 11
+colors 1 130
+colors 2 42
+colors 3 68
+colors 4 195
+colors 5 138
+colors 6 252
+colors 7 31
+colors 8 147
+colors 9 19
+colors 10 234
+colors 11 209
+GrowthProbability 0.4938861
+NumberVertices 6
+Radius 44.53662
+SurfaceRandomizer 68822.99
+Rotation 0 0.004814297
+Rotation 1 -0.009791783
