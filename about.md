@@ -24,9 +24,7 @@ Inspired by the pioneers of crypto-native generative art like [Larva Labs](https
 
 Our contract can be found [here](https://etherscan.io/address/0x08e8bd2b24ebef3ef407aca9db13436d3fce25c2) and is built off of open source, battle tested code from both [OpenZeppelin](https://openzeppelin.com/) and [Deafbeef](https://etherscan.io/address/0xd754937672300ae6708a51229112de4017810934#code). Having our own contract gives us full ownership of our work, without the fees and centralized control of NFT minting via [marketplaces](https://opensea.io/) -- antithetical to the decentralized dream of Satoshi Nakamoto. It also gives us complete artistic freedom to experiment with new ways of issuing tokens and ways to create art.
 
-50% of all proceeds will be donated to [GiveDirectly](https://www.givedirectly.org/). A [GiveWell](https://www.givewell.org/) top rated charity.
-
-We are interested in helping to further open source the creation of NFTs outside of centralized minting contracts and are happy to help other interested artists in deploying their own work.
+50% of all proceeds will be donated to [GiveDirectly](https://www.givedirectly.org/), a [GiveWell](https://www.givewell.org/) top rated charity. In addition, we are interested in helping to further open source the creation of NFTs outside of centralized minting contracts and are happy to help other interested artists in deploying their own work.
 
 ## FAQs
 
