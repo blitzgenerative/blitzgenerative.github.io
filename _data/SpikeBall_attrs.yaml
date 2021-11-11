@@ -1,22 +1,22 @@
 SpikeBall 0:
   RotationX: Positive Fast
-  RotationY: Negative Fast
-  GrowthProbability: Slow Decay
-  NumberVertices: Slow Decay
-  Radius: Small
-  SurfaceRandomizer: Extremely Dense
+  RotationY: Positive Fast
+  GrowthProbability: Fast Decay
+  NumberVertices: Many Vertices
+  Radius: Large
+  SurfaceRandomizer: Very Dense
   BackgroundColor: ForestGreen
   LightingColor: MediumSeaGreen
   SurfaceColor: DeepPink
   StrokeColor: DarkTurquoise
 SpikeBall 1:
-  RotationX: Negative Fast
-  RotationY: Positive Fast
-  GrowthProbability: Fast Growth
-  NumberVertices: Few Vertices
-  Radius: Small
-  SurfaceRandomizer: Extremely Dense
+  RotationX: Positive Fast
+  RotationY: Negative Fast
+  GrowthProbability: Slow Growth
+  NumberVertices: Slow Growth
+  Radius: Large
+  SurfaceRandomizer: Very Dense
   BackgroundColor: Tan
-  LightingColor: DimGray
+  LightingColor: DimGrey
   SurfaceColor: DarkOrchid
   StrokeColor: MediumPurple

@@ -30,7 +30,7 @@ Our contract can be found [here](https://etherscan.io/address/0x08e8bd2b24ebef3e
 
 - **Who is behind Blitz Generative?**
 
-Blitz Generative is a pseudo-anonymous researcher in artificial intelligence. Separate interests in generative art and blockchains met each other, fell in love, and Blitz Generative is their child.
+Blitz Generative is a pseudo-anonymous collective of artificial intelligence researchers. Separate interests in generative art and blockchains met each other, fell in love, and Blitz Generative is their child.
 
 - **How do I obtain a Blitz art piece?**
 
