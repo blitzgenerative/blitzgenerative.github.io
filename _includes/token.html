@@ -1,7 +1,7 @@
 {% assign tokenParams = site.data.works[page.title] %}
 {% assign tokenAttrs = site.data.SpikeBall_attrs[page.title] %}
 <video class="seriesOverviewVideo" height="600" autoplay="autoplay" controls loop >
-  <source type="video/mp4" src="/assets/vids/{{page.title}}.mp4" type="video/mp4">
+  <source type="video/mp4" src="https://gateway.pinata.cloud/ipfs/{{tokenParams.ipfs_hash}}" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
