@@ -68,6 +68,6 @@ For the first "SpikeBall" series, Processing is used. An implementation in p5.js
 
 1. Download Processing version 3.5.4 on a computer: <a href="https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-macosx.zip" target="_blank" rel="noopener noreferrer">Mac Download</a>, <a href="https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-windows64.zip" target="_blank" rel="noopener noreferrer">Windows Download</a>. <a href="https://processing.org/download" target="_blank" rel="noopener noreferrer"> General Processing download site</a>.
 
-2. Copy and paste the code for this series which is permanently hosted on the blockchain and can be found at the bottom of the series section.
+2. Copy and paste the code for this series which is hosted on IPFS and can be found at the bottom of the series section.
 
 3. Paste at the top line <code>rs=SEED</code> your unique random seed.
