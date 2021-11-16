@@ -31,3 +31,14 @@ SpikeBall 2:
   LightingColor: DarkSlateGrey
   SurfaceColor: MediumBlue
   StrokeColor: SeaGreen
+SpikeBall 3:
+  RotationX: Negative Fast
+  RotationY: Negative Fast
+  GrowthProbability: Fast Growth
+  NumberVertices: Many Vertices
+  Radius: Large
+  SurfaceRandomizer: Very Dense
+  BackgroundColor: MediumSeaGreen
+  LightingColor: BlueViolet
+  SurfaceColor: Khaki
+  StrokeColor: Purple
