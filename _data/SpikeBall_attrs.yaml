@@ -20,3 +20,14 @@ SpikeBall 1:
   LightingColor: DimGrey
   SurfaceColor: DarkOrchid
   StrokeColor: MediumPurple
+SpikeBall 2:
+  RotationX: Positive Fast
+  RotationY: Positive Fast
+  GrowthProbability: Slow Growth
+  NumberVertices: Few Vertices
+  Radius: Large
+  SurfaceRandomizer: Very Dense
+  BackgroundColor: DodgerBlue
+  LightingColor: DarkSlateGrey
+  SurfaceColor: MediumBlue
+  StrokeColor: SeaGreen
