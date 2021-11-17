@@ -42,3 +42,14 @@ SpikeBall 3:
   LightingColor: BlueViolet
   SurfaceColor: Khaki
   StrokeColor: Purple
+SpikeBall 4:
+  RotationX: Positive Fast
+  RotationY: Negative Fast
+  GrowthProbability: Slow Decay
+  NumberVertices: Low Vertices
+  Radius: Large
+  SurfaceRandomizer: Dense
+  BackgroundColor: Pink
+  LightingColor: PaleGreen
+  SurfaceColor: IndianRed
+  StrokeColor: MediumVioletRed

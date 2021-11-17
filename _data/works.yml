@@ -26,3 +26,10 @@ SpikeBall 3:
   seed: "0x020c23a6a820b0ef4da84e46e2a9e7108e452711e8f36e48c8f4f2be8110013a"
   nTransactions: 1
   ipfs_hash: Qme6YjHN7DkAGhGTzbpn636BSooLBRMdjrkwdhCAPiqxHq
+SpikeBall 4:
+  id: 4
+  link: /SpikeBall-4/
+  owner: "0xD9bc7A6813FDb872edEe5e742D7CC6BC99493CEF"
+  seed: "0x396e4d0ff7cfbda072c6a8ccbc4f0e02a47590f540a5e1d43869878a0582e283"
+  nTransactions: 1
+  ipfs_hash: QmNuWWnS6oPYwZnkjEgiZVWuxDewssSSsJz5sd7LgZPQgz
