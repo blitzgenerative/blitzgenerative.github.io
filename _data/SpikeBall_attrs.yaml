@@ -53,3 +53,14 @@ SpikeBall 4:
   LightingColor: PaleGreen
   SurfaceColor: IndianRed
   StrokeColor: MediumVioletRed
+SpikeBall 5:
+  RotationX: Negative Fast
+  RotationY: Negative Fast
+  GrowthProbability: Slow Decay
+  NumberVertices: Slow Decay
+  Radius: Large
+  SurfaceRandomizer: Sparse
+  BackgroundColor: LightSkyBlue
+  LightingColor: DarkSlateBlue
+  SurfaceColor: Tomato
+  StrokeColor: OliveDrab
